@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtGui, QtWidgets,QPushButton
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 
@@ -74,7 +74,7 @@ class Ui_MainWindow(object):
         self.login.setText(_translate("MainWindow", "логин"))
         self.leave.setText(_translate("MainWindow", "вийти"))
 
-btn_pinpong_igrat = QPushButton("Грати Пинг понг")
+
 
 
 
