@@ -1,4 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+from pingpong import pingpong_igrat
+
 
 
 
@@ -55,7 +57,8 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-
+        self.pingpong_igrat.clicked.connect(pingpong_igrat)
+        
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -73,8 +76,6 @@ class Ui_MainWindow(object):
         self.groupBox.setTitle(_translate("MainWindow", "GroupBox"))
         self.login.setText(_translate("MainWindow", "логин"))
         self.leave.setText(_translate("MainWindow", "вийти"))
-
-
 
 
 
